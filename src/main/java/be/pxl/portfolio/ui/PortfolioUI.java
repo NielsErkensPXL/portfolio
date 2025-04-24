@@ -41,17 +41,17 @@ public class PortfolioUI extends JFrame {
 
         JPanel typePanel = new JPanel();
         typePanel.setLayout(new BoxLayout(typePanel, BoxLayout.Y_AXIS));
-        typePanel.setBackground(new Color(245, 245, 255)); // Light pastel blue
+        typePanel.setBackground(new Color(245, 245, 255)); 
         typePanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
         if ("seminarie".equals(type)) {
             JPanel gridPanel = new JPanel(new GridLayout(0, 4, 10, 10));
-            gridPanel.setBackground(new Color(255, 240, 245)); // Light pastel pink
+            gridPanel.setBackground(new Color(255, 240, 245));
 
             for (Activity a : activitiesOfType) {
                 JPanel panel = new JPanel(new BorderLayout());
                 panel.setPreferredSize(new Dimension(200, 150));
-                panel.setBackground(new Color(255, 250, 240)); // Light pastel peach
+                panel.setBackground(new Color(255, 250, 240));
                 panel.setBorder(BorderFactory.createCompoundBorder(
                         BorderFactory.createLineBorder(new Color(200, 200, 200), 1),
                         BorderFactory.createEmptyBorder(5, 5, 5, 5)
@@ -79,7 +79,7 @@ public class PortfolioUI extends JFrame {
             for (Activity a : activitiesOfType) {
                 JPanel panel = new JPanel();
                 panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
-                panel.setBackground(new Color(240, 255, 240)); // Light pastel green
+                panel.setBackground(new Color(240, 255, 240));
                 panel.setBorder(BorderFactory.createCompoundBorder(
                         BorderFactory.createLineBorder(new Color(200, 200, 200), 1),
                         BorderFactory.createEmptyBorder(10, 10, 10, 10)
